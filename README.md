@@ -364,87 +364,15 @@ sequenceDiagram
 
 ---
 
-## 🌍 Deployment
-
-### Frontend → [Netlify](https://www.netlify.com)
-
-The repo includes `client/netlify.toml` with build settings pre-configured.
-
-1. **Connect your repo** on Netlify
-2. **Base directory**: `client`
-3. **Build command**: `npm run build`
-4. **Publish directory**: `dist`
-5. Add env vars: `VITE_API_URL`, `VITE_STRIPE_PUBLIC_KEY`
-
-### Backend → [Render](https://www.render.com)
-
-Repo includes `render.yaml` for one-click deploy.
-
-1. New → Web Service → connect repo
-2. **Root directory**: `server`
-3. **Build**: `npm install` · **Start**: `npm start`
-4. Add env vars: `MONGO_URI`, `JWT_SECRET`, `CLIENT_URL`, `STRIPE_SECRET_KEY`
-
-> ⚠️ Don't forget to update `CLIENT_URL` on Render with your Netlify domain, and `VITE_API_URL` on Netlify with your Render domain.
-
----
-
-## ✅ Quality
-
-The full backend has **end-to-end test coverage** across every route, role, and edge case:
-
-```
-━━━━━━━━ AUTH ━━━━━━━━              ✓ 9/9
-━━━━━━━━ PROFILES ━━━━━━━━           ✓ 4/4
-━━━━━━━━ TUTORS ━━━━━━━━             ✓ 8/8
-━━━━━━━━ LESSONS ━━━━━━━━            ✓ 15/15
-━━━━━━━━ PAYMENTS ━━━━━━━━           ✓ 3/3
-━━━━━━━━ REVIEWS ━━━━━━━━            ✓ 5/5
-━━━━━━━━ RECORDINGS ━━━━━━━━         ✓ 5/5
-━━━━━━━━ ADMIN ━━━━━━━━              ✓ 11/11
-━━━━━━━━ EDGE CASES ━━━━━━━━         ✓ 5/5
-
-  PASSED 67/67 ✨
-```
-
----
-
-## 📸 Screens
-
-> Pages are designed mobile-first with a premium dark aesthetic — deep gradients, soft glows, animated subject grid, real photos, and smooth motion via Framer Motion.
-
-- 🏠 **Home** — Hero with live classroom mockup, animated subject grid, testimonials
-- 🔍 **Tutors** — Filterable list with search, ratings, hourly rates
-- 👤 **Tutor profile** — Full credentials, available slots, reviews
-- 📅 **Student dashboard** — Upcoming + past lessons, reschedule, cancel, review
-- 🧑‍🏫 **Tutor hub** — Lesson CRUD, recording uploads, earnings stats
-- 🎬 **Lesson room** — Embedded Jitsi with auth, plus recording playback
-- 💳 **Payments** — Full transaction history
-- 👑 **Admin** — Stats grid + user table with role/active controls
-
----
-
-## 🤝 Contributing
-
-PRs welcome! Open an issue to discuss bigger features.
-
-```bash
-git checkout -b feat/your-feature
-git commit -m "feat: amazing thing"
-git push origin feat/your-feature
-```
-
----
-
 ## 📄 License
 
-MIT — do whatever you want with it.
+MIT, do whatever you want with it.
 
 <div align="center">
 
 <br/>
 
-<sub>Made with ☕, ⌨️, and a lot of refactors.</sub>
+<sub>Made with ☕, ⌨️ and a lot of refactors.</sub>
 
 <br/>
 
