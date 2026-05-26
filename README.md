@@ -372,7 +372,7 @@ MIT, do whatever you want with it.
 
 <br/>
 
-<sub>Made with ☕, ⌨️ and a lot of refactors.</sub>
+<sub>Made with ☕ and a lot of refactors.</sub>
 
 <br/>
 
